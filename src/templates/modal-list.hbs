@@ -1,0 +1,57 @@
+<div class="hbs" id='{{id}}'>
+  <div class="thumb" >
+    <div class="tumb_icon"></div>
+    <img class="modal-icon" src="{{miniImg}}" alt='{{events.name}}'>
+  </div>
+  </div>
+
+  <div class="modal-info">
+    <div class="modal-img-thumb">
+      <div class="tumb-bigImg">
+      <img class="modal-img" src="{{bigImg}}" alt="{{events.name}}">
+      </div>
+    </div>
+    <ul class="modal-details">
+      <li class="modal-item">
+        <p class="modal-item__header">INFO</p>
+        <p class="modal-item__descr">{{events.info}}</p>
+      </li>
+      <li class="modal-item">
+        <p class="modal-item__header">WHEN</p>
+        <p class="modal-item__descr">{{events.dates.start.localDate}}<br>{{events.dates.start.localTime}} ({{events.dates.timezone}})</p>
+      </li>
+      <li class="modal-item">
+        <p class="modal-item__header">WHERE</p>
+        <p class="modal-item__descr">{{events._embedded.venues.[0].city.name}},
+          {{events._embedded.venues.[0].country.name}}<br>{{events._embedded.venues.[0].address.line1}}</p>
+      </li>
+      <li class="modal-item">
+        <p class="modal-item__header">WHO</p>
+        <p class="modal-item__descr">{{events.name}}</p>
+      </li>
+      <li class="modal-item">
+        <p class="modal-item__header">PRICES</p>
+        <div class="price">
+          <svg class="barcode" viewBox="0 0 44 32">
+            <path d="M4.91 1.269H0V30.73h4.91V1.269zm12.35 0h-4.911V30.73h4.911V1.269zm7.439 0h-4.91V30.73h4.91V1.269zm19.491
+                        0h-7.291V30.73h7.291V1.269zm-34.371 0h-2.38V30.73h2.38V1.269zm19.641 0h-2.38V30.73h2.38V1.269zm4.91
+                        0h-2.38V30.73h2.382V1.269z" fill="#0E0E0E" />
+          </svg>
+          <p class="modal-item__descr price-descr">Standart {{events.priceRanges.[0].min}}{{events.priceRanges.[0].currency}}</p>
+        </div>
+        <a class="btn-js hvr-pulse-grow" target="_blank" href={{events.url}}>BUY TICKETS</a>
+        <div class="price">
+          <svg class="barcode" viewBox="0 0 44 32">
+            <path d="M4.91 1.269H0V30.73h4.91V1.269zm12.35 0h-4.911V30.73h4.911V1.269zm7.439 0h-4.91V30.73h4.91V1.269zm19.491 
+                  0h-7.291V30.73h7.291V1.269zm-34.371 0h-2.38V30.73h2.38V1.269zm19.641 0h-2.38V30.73h2.38V1.269zm4.91 
+                  0h-2.38V30.73h2.382V1.269z" fill="#0E0E0E" />
+          </svg>
+          <p class="modal-item__descr price-descr">VIP {{events.priceRanges.[0].max}}{{events.priceRanges.[0].currency}}</p>
+        </div>
+        <a class="btn-js hvr-pulse-grow" target="_blank" href={{events.url}}>BUY TICKETS</a>
+      </li>
+    </ul>
+  </div>
+    <button name='{{events.name}}' class="modal-btn btn-more hvr-pulse-grow" type="button">MORE FROM THIS AUTHOR</button>
+
+</div>

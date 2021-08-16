@@ -1,0 +1,21 @@
+{{#each this}}
+<li class='card'>
+  <div class="list_decor" id ='{{event.id}}'></div>
+    <div class='img-card'>
+      <div class="img-container">
+        <img src='{{imag}}' alt='{{event.id}}' class='card__image' />
+      </div>
+    </div>
+    <div class='card__content'>
+      <h2 class='card__name'>{{event.name}}</h2>
+      <p class='date'>
+        {{event.dates.start.localDate}}</p>
+      <p class='place_of_location'>
+        <span class='material-icons'>
+          location_on
+        </span>
+        {{event._embedded.venues.[0].name}}
+      </p>
+    </div>
+</li>
+{{/each}}

@@ -1,0 +1,7 @@
+<ul class="pagination-list">
+    {{#each pageList}}
+    <li class="page-item"><button type="button" class="page-button">{{this}}</button></li>
+    {{/each}}
+    <li class="page-item"><button type="button" class="page-button dots" disabled>...</button></li>
+    <li class="page-item"><button type="button" class="page-button">{{lastPage}}</button></li>
+</ul>

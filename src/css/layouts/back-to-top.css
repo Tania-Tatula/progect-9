@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#back-to-top-btn {
+position: fixed;
+background-color: black;
+color: #dc56c5;
+cursor: pointer;
+outline: none;
+border-top-left-radius: 50%;
+border-bottom-right-radius: 50%;
+/* border-radius: 50%; */
+border: 1px solid #dc56c5; 
+transition-duration: 0.2s;
+}
+
+  @media screen and (min-width: 320px){
+    #back-to-top-btn {
+        bottom: 100px;
+        right: 10px;
+        width: 15px;
+        height: 25px;
+        font-size: 16px;
+        }
+  }
+
+  @media screen and (min-width: 768px){
+    #back-to-top-btn {
+        bottom: 100px;
+        right: 20px;
+        width: 22px;
+        height: 35px;
+        font-size: 16px;
+        }
+  }
+
+  @media screen and (min-width: 1280px){
+    #back-to-top-btn {
+        bottom: 100px;
+        right: 100px;
+        width: 40px;
+        height: 50px;
+        font-size: 26px;
+        }
+  }
+
+  .btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+
+  @keyframes btnEntrance {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;  
+    animation-name: btnExit;
+  }
+
+  @keyframes btnExit {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+ 

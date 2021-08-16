@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="shortcut icon" href="/" type="">
+    <script src="https://kit.fontawesome.com/b5f03d56ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="overlay">
+            <div class="head-container">
+                <div class="header_logo-div">
+                <div class="header_logo"></div>
+                </div>
+                <h1 class="heder_title">
+                    FIND BEST EVENTS <br /> AROUND THE WORLD
+                </h1>
+                <div class="search-div">
+                    <form  class="search-form" id="search-form">
+                        <input class="search" type="text" placeholder="Start searching" name="query" autocomplete="off"/>
+                        <button class="search-icon" type="submit"></button>
+                    </form>
+                    <div class="dropdown">
+                        <span class="defolt_value">Choose country</span>
+                        <div class="dropdown-content">
+                            <div class="counry">
+                                <p class="counry_list">
+                                    <button class="counry_link" name="CA">Canada</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="US">USA</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="PL">Poland</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="IL">Israel</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="DE">Deutschland</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="IE">Ireland</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="FR">France</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="JP">Japan</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="GT">Guatemala</button>
+                                </p>
+                                <p class="counry_list">
+                                    <button class="counry_link" name="TH">Taiwan</button>
+                                </p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="concert-list">
+        <div class="concert-container">
+        <div class="presentation"></div>
+          <ul class="card-list js-list gallery">
+            <!-- Список <li> с карточками изображений -->
+          </ul>
+        </div>
+        <div class="pagination">
+
+        </div>
+    </section>
+
+    <!-- Кнопка back-to-top -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+    <footer class="footer">
+        <div class="concert-list">
+            <div class="container">
+                <p class="footer__text">
+                    © 2021
+                    <span class="footer__vertikal-line">|</span> All Rights Reserved
+                    <span class="footer__vertikal-line">|</span>
+                </p>
+                <p class="footer__text">
+                    Developed with
+                    <span class="footer__text-icons">♥</span> <button class="futer-btn">by GoIT Students</button>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="preloader">
+        <div class="head">
+            <div class="eyes"></div>
+        </div>
+    </div>
+
+    <!-- MODAL  -->
+
+    <div class="backdrop backdrop--hiden" data-backdrop>     
+      <div class="modal-container">
+        <div class="modal">
+          <button data-close-modal type="button">
+            <svg class="close-icon">
+              <use href="./images/icon/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="js-modalTpl"></div>
+  
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
